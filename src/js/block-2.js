@@ -1,6 +1,6 @@
 let buttonElement = document.querySelector('.button');
 let sliderElement = document.querySelector('.brand-list');
-let containerElement = document.querySelector('.page-container');
+let containerElement = document.querySelector('.second-section-container');
 let swiperPage;
 
 let openBrandMenu = function () {
