@@ -4,6 +4,7 @@
   margin: 0 auto;
   background-color: #F8F8F8;
   font-family: "TTLakes";
+  border: 1px solid transparent;
   @media (min-width: 768px) {
     width: 768px;
   }
@@ -141,6 +142,7 @@
   width: 320px;
   height: auto;
   margin: 15px;
+  margin-bottom: 0;
   position: relative;
   @media (min-width: 768px) {
     width: 480px;

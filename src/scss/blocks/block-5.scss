@@ -1,0 +1,41 @@
+.page-footer {
+  padding-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #7E7E82;
+  width: 320px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #F8F8F8;
+  font-family: "TTLakes";
+  font-size: 14px;
+  box-sizing: border-box;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 768px;
+  }
+  @media (min-width: 1120px) {
+    width: 1120px;
+  }
+  &__copyright {
+    @media (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+    @media (min-width: 1120px) {
+      text-align: left;
+    }
+  }
+}
+
+.page-footer__conf {
+  margin-bottom: 16px;
+}
+
+.page-footer__oferta {
+  @media (min-width: 768px) {
+    text-align: right;
+  }
+}
