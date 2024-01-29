@@ -1,3 +1,2 @@
-import '../scss/style.scss'
-
-console.log('Works!')
+// import '../scss/style.scss';
+// import './block -2';
