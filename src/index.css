@@ -1,12 +1,12 @@
 @font-face {
   font-family: "TTLakes";
-  src: url("../fonts/TTLakes-Medium.woff") format("woff"), url("../fonts/TTLakes-Medium.ttf") format("truetype"), url("../fonts/TTLakes-Medium.eot") format("embeddedopentype");
+  src: url("../src/fonts/TTLakes-Medium.woff") format("woff"), url("../src/fonts/TTLakes-Medium.ttf") format("truetype"), url("../src/fonts/TTLakes-Medium.eot") format("embeddedopentype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "TTLakes";
-  src: url("../fonts/TTLakes-Bold.woff") format("woff"), url("../fonts/TTLakes-Bold.ttf") format("truetype"), url("../fonts/TTLakes-Bold.eot") format("embeddedopentype");
+  src: url("../src/fonts/TTLakes-Bold.woff") format("woff"), url("../src/fonts/TTLakes-Bold.ttf") format("truetype"), url("../src/fonts/TTLakes-Bold.eot") format("embeddedopentype");
   font-weight: 700;
   font-style: normal;
 }
@@ -148,25 +148,26 @@ body {
   }
 }
 
-.title {
+.title-first-block {
   width: 302px;
   height: 40px;
   display: flex;
   flex-wrap: nowrap;
   margin-left: 0;
   padding-top: 24px;
+  background-color: #F8F8F8;
 }
 @media (min-width: 1120px) {
-  .title {
+  .title-first-block {
     display: none;
   }
 }
-.title__highlight {
+.title-first-block__highlight {
   width: 4px;
   height: 40px;
   background-color: #41F6D7;
 }
-.title__text {
+.title-first-block__text {
   width: 268px;
   height: 40px;
   display: block;
@@ -177,22 +178,54 @@ body {
   margin: 0;
   margin-left: 12px;
 }
-.title--hidden {
-  display: none;
+
+@media (min-width: 320px) {
+  .title-first-block-alt {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
-  .title--hidden {
+  .title-first-block-alt {
     display: none;
   }
 }
 @media (min-width: 1120px) {
-  .title--hidden {
-    width: 302px;
+  .title-first-block-alt {
+    display: block;
+    width: 1120px;
     height: 40px;
     display: flex;
     flex-wrap: nowrap;
     margin-left: 0;
     padding-top: 24px;
+    background-color: #F8F8F8;
+    font-size: 24px;
+    position: relative;
+  }
+}
+@media (min-width: 320px) {
+  .title-first-block-alt__highlight {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .title-first-block-alt__highlight {
+    display: none;
+  }
+}
+@media (min-width: 1120px) {
+  .title-first-block-alt__highlight {
+    display: block;
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+  }
+}
+@media (min-width: 1120px) {
+  .title-first-block-alt__text {
+    position: absolute;
+    top: -5px;
+    left: 20px;
   }
 }
 
