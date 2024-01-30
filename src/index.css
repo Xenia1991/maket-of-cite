@@ -556,6 +556,7 @@ body {
 @media (min-width: 768px) {
   .brand-list--unhidden {
     width: 768px;
+    height: 400px;
     display: flex;
     overflow: hidden;
     flex-wrap: wrap;
@@ -570,6 +571,7 @@ body {
 @media (min-width: 1120px) {
   .brand-list--unhidden {
     width: 1120px;
+    height: 310px;
   }
 }
 
@@ -613,7 +615,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .button {
+  .button-first {
     border: none;
     display: flex;
     vertical-align: middle;
@@ -624,12 +626,12 @@ body {
   }
 }
 @media (min-width: 768px) {
-  .button-img {
+  .button-first-img {
     display: block;
   }
 }
 @media (min-width: 768px) {
-  .button-text {
+  .button-first-text {
     display: block;
   }
 }
@@ -811,7 +813,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .button {
+  .button-second {
     border: none;
     display: flex;
     vertical-align: middle;
@@ -822,12 +824,12 @@ body {
   }
 }
 @media (min-width: 768px) {
-  .button-img {
+  .button-second-img {
     display: block;
   }
 }
 @media (min-width: 768px) {
-  .button-text {
+  .button-second-text {
     display: block;
   }
 }
@@ -980,6 +982,7 @@ body {
 }
 
 #pagination {
+  display: block;
   position: absolute;
   bottom: 635px;
   z-index: 10;

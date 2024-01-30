@@ -90,6 +90,7 @@ body {
   &--unhidden {
     @media (min-width: 768px) {
       width: 768px;
+      height: 400px;
       display: flex;
       overflow: hidden;
       flex-wrap: wrap;
@@ -102,6 +103,7 @@ body {
     }
     @media (min-width: 1120px) {
       width: 1120px;
+      height: 310px;
     }
   }
 }
@@ -141,7 +143,7 @@ body {
   }
 }
 
-.button {
+.button-first {
   @media (min-width: 768px) {
     border: none;
     display: flex;
