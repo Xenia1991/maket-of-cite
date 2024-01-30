@@ -1210,6 +1210,7 @@ body {
 @media (min-width: 768px) {
   .page-footer__copyright {
     margin-bottom: 16px;
+    text-align: left;
   }
 }
 @media (min-width: 1120px) {
