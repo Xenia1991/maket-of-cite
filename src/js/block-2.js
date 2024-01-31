@@ -1,7 +1,9 @@
+import Swiper from 'swiper';
+import { Pagination } from 'swiper/modules';
+
 let buttonElement1 = document.querySelector('.button-first');
 let sliderElement = document.querySelector('.brand-list');
-let containerElement = document.querySelector('.second-section-container');
-let swiperPage;
+const bodyElement = document.body;
 
 let openBrandMenu = function () {
 
@@ -30,38 +32,37 @@ let openBrandMenu = function () {
    }
 }
 
-let resizeWindow = function () {
+let swiper;
 
-   if (containerElement.clientWidth < 768 && !swiperPage) {
-      swiperPage = new Swiper('.slider-list', {
-         slidesPerView: '1.2',
-
-         pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-         }
-      });
-   } else if (containerElement.clientWidth>=768 && swiperPage) {
-      swiperPage.disable();
-      swiperPage.destroy(false, true);
-      swiperPage = null;
-   }
-
+if (bodyElement.clientWidth < 768) {
+  swiper = new Swiper('.swiper', {
+    modules: [Pagination],
+    slidesPerView: 'auto',
+    spaceBetween: 15,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    }
+  });
 }
 
-if (containerElement.clientWidth < 768) {
-
-   swiperPage = new Swiper('.slider-list', {
-
-      slidesPerView: '1.2',
-
+const toggleSwiper = () => {
+  if (bodyElement.clientWidth < 768 && !swiper) {
+    swiper = new Swiper('.swiper', {
+      modules: [Pagination],
+      slidesPerView: 'auto',
+      spaceBetween: 15,
       pagination: {
-         el: '.swiper-pagination',
-         clickable: true,
+        el: '.swiper-pagination',
+        clickable: true
       }
-
-   });
+    });
+  } else if (bodyElement.clientWidth >= 768 && swiper) {
+    swiper.forEach((swiperInstance) => swiperInstance.disable());
+    swiper.forEach((swiperInstance) => swiperInstance.destroy(false, true));
+    swiper = null;
+  }
 };
 
 buttonElement1.addEventListener('click', openBrandMenu);
-window.addEventListener ('resize', resizeWindow);
+window.addEventListener ('resize', toggleSwiper);

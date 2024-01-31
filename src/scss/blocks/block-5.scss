@@ -7,7 +7,7 @@
   color: #7E7E82;
   width: 320px;
   height: auto;
-  margin: 0 auto;
+  // margin: 0 auto;
   background-color: #F8F8F8;
   font-family: "TTLakes";
   font-size: 14px;
@@ -19,6 +19,9 @@
   }
   @media (min-width: 1120px) {
     width: 1120px;
+    position: relative;
+    top: -3px;
+    left: 320px;
   }
   &__copyright {
     @media (min-width: 768px) {

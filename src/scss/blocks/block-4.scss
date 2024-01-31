@@ -1,7 +1,7 @@
 .forth-section-container {
   width: 320px;
   height: auto;
-  margin: 0 auto;
+  // margin: 0 auto;
   background-color: #F8F8F8;
   font-family: "TTLakes";
   border: 1px solid transparent;
@@ -10,6 +10,9 @@
   }
   @media (min-width: 1120px) {
     width: 1120px;
+    position: relative;
+    top: -3px;
+    left: 320px;
   }
 }
 .title {
@@ -43,7 +46,7 @@
 }
 
 .screen--small {
-  height: auto;
+  height: 260px;
   display: flex;
   overflow: hidden;
   margin-left: 16px;
@@ -127,10 +130,10 @@
 }
 
 #pagination {
-  display: block;
-  position: absolute;
-  bottom: 635px;
-  z-index: 10;
+  // display: block;
+  position: absolute!important;
+  // bottom: -15px;
+  // z-index: 10;
   @media (min-width: 768px) {
     display: none;
   }
