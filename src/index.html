@@ -14,7 +14,7 @@
       <section class="side-bar-container">
         <header class="services">
             <ul class="navigation-links">
-                <li class="navigation-links__item"><img src="./img/close.png" alt="Закрыть сайд-бар"></li>
+                <li class="navigation-links__item navigation-links__item--closed"><img src="./img/close.png" alt="Закрыть сайд-бар"></li>
                 <li class="navigation-links__item"><img src="./img/Group.png" alt="Логотип компании"></li>
                 <li class="navigation-links__item"><img src="./img/search.png" alt="Поиск по сайту" class="navigation-links__third-link"></li>
             </ul>
@@ -33,8 +33,8 @@
         </header>
         <footer class="contacts">
             <ul class="contact-links">
-                <li class="contact-links__item"><img src="./img/call.png" alt="Позвонить нам"></li>
-                <li class="contact-links__item"><img src="./img/chat.png" alt="Написать нам"></li>
+                <li class="contact-links__item contact-link--opened"><img src="./img/call.png" alt="Позвонить нам"></li>
+                <li class="contact-links__item feedback-form--opened"><img src="./img/chat.png" alt="Написать нам"></li>
                 <li class="contact-links__item"><img src="./img/profile.png" alt="Профиль"></li>
             </ul>
             <section class="contact-info">
@@ -69,12 +69,12 @@
                 </li>
                 <li class="menu-item menu-item--hidden menu-item--hidden-for-width1120">
                     <a href="/" class="menu-item__image">
-                    <img src="./img/call.png">
+                    <img src="./img/call.png" class="contact-link--opened">
                     </a>
                 </li>
                 <li class="menu-item menu-item--hidden menu-item--hidden-for-width1120">
                     <a href="/" class="menu-item__image">
-                    <img src="./img/chat.png">
+                    <img src="./img/chat.png" class="feedback-form--opened">
                     </a>
                 </li>
                 <li class="menu-item menu-item--hidden menu-item--hidden-for-width1120">
@@ -508,6 +508,51 @@
           Информация, размещенная на данной странице,
           не является публичной офертой
         </div>
+      </section>
+      <section class="call-container">
+        <button class="call-close">
+          <img src="./img/close.png" alt="Закрыть" class="call-close__img">
+        </button>
+        <div class="call-headline">
+          <div class="call-headline__divider"></div>
+          <h2 class="call-headline__text">Заказать звонок</h2>
+        </div>
+        <form action="#" method="post" class="call-form">
+          <input type="number" id="phone" name="phone" placeholder="  Телефон" class="call-form__phone-input">
+        </form>
+        <section class="call-text">
+          Нажимая “отправить”, вы даете согласие на
+          <span class="call-text--pink">обработку персональных данных</span>
+          и соглашаетесь с нашей <span class="call-text--pink">политикой конфиденциальности</span>
+        </section>
+        <button class="call-button">
+          <span class="call-button__text">Отправить</span>
+          <img src="./img/goside.png" alt="Отправить форму" class="call-button__img">
+        </button>
+      </section>
+      <section class="feedback-container">
+        <div class="feedback-close">
+          <img src="./img/close.png" alt="Закрыть" class="feedback-close__img">
+        </div>
+        <div class="feedback-headline">
+          <div class="feedback-headline__divider"></div>
+          <h2 class="feedback-headline__text">Обратная связь</h2>
+        </div>
+        <form action="#" method="post" class="feedback-form">
+          <input type="text" id="name" name="name" placeholder="  Имя" class="feedback-form__name-input">
+          <input type="number" id="phone" name="phone" placeholder="  Телефон" class="feedback-form__phone-input">
+          <input type="email" id="email" name="email" placeholder="  Электронная почта" class="feedback-form__email-input">
+          <textarea type="text" name="message" id="message" cols="30" rows="8" placeholder="  Сообщение" class="feedback-form__message-input"></textarea>
+        </form>
+        <section class="feedback-text">
+          Нажимая “отправить”, вы даете согласие на
+          <span class="feedback-text--pink">обработку персональных данных</span>
+          и соглашаетесь с нашей <span class="feedback-text--pink">политикой конфиденциальности</span>
+        </section>
+        <button class="feedback-button">
+          <span class="feedback-button__text">Отправить</span>
+          <img src="./img/goside.png" alt="Отправить форму" class="feedback-button__img">
+        </button>
       </section>
     </main>
   </body>
