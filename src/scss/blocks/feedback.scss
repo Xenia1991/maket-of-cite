@@ -1,6 +1,7 @@
 body {
   position: relative;
 }
+
 .feedback-container {
   display: none;
   &--hidden {
@@ -9,7 +10,6 @@ body {
     position: absolute;
     top: -10px;
     z-index: 3;
-    // margin: 0 auto;
     background-color: white;
     font-family: "TTLakes";
     border: 1px solid transparent;
@@ -25,7 +25,6 @@ body {
       left: 1000px;
     }
   }
-
 }
 
 .feedback-close {

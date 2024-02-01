@@ -1,7 +1,6 @@
 .forth-section-container {
   width: 320px;
   height: auto;
-  // margin: 0 auto;
   background-color: #F8F8F8;
   font-family: "TTLakes";
   border: 1px solid transparent;
@@ -130,10 +129,7 @@
 }
 
 #pagination {
-  // display: block;
   position: absolute!important;
-  // bottom: -15px;
-  // z-index: 10;
   @media (min-width: 768px) {
     display: none;
   }

@@ -9,22 +9,19 @@ body {
 
 .first-section-container {
   width: 320px;
-  // margin: 0 auto;
   font-family: "TTLakes";
   font-style: normal;
   background-color: #F8F8F8;
   @media (min-width: 768px) {
     width: 768px;
-    // margin: 0 auto;
   }
   @media (min-width: 1120px) {
     width: 1120px;
-    // margin: 0 auto;
     position: relative;
     top: -3px;
     left: 320px;
   }
-  
+
 }
 
 .menu {

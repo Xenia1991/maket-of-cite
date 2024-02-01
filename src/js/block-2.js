@@ -9,26 +9,24 @@ let openBrandMenu = function () {
 
    if (sliderElement.classList.contains('brand-list--hidden')) {
 
-       sliderElement.classList.remove('brand-list--hidden');
-       sliderElement.classList.add('brand-list--unhidden');
+      sliderElement.classList.remove('brand-list--hidden');
+      sliderElement.classList.add('brand-list--unhidden');
 
-       let buttonText = buttonElement1.querySelector('.button-first__text');
-       buttonText.textContent = 'Скрыть';
+      let buttonText = buttonElement1.querySelector('.button-first__text');
+      buttonText.textContent = 'Скрыть';
 
-       let buttonImg = buttonElement1.querySelector('.button-first__img');
-       buttonImg.src = './img/up.png';
+      let buttonImg = buttonElement1.querySelector('.button-first__img');
+      buttonImg.src = './img/up.png';
 
    } else if (sliderElement.classList.contains('brand-list--unhidden')) {
+      sliderElement.classList.remove('brand-list--unhidden');
+      sliderElement.classList.add('brand-list--hidden');
 
-       sliderElement.classList.remove('brand-list--unhidden');
-       sliderElement.classList.add('brand-list--hidden');
+      let buttonText = buttonElement1.querySelector('.button-first__text');
+      buttonText.textContent = 'Показать все';
 
-       let buttonText = buttonElement1.querySelector('.button-first__text');
-       buttonText.textContent = 'Показать все';
-
-       let buttonImg = buttonElement1.querySelector('.button-first__img');
-       buttonImg.src = './img/expand.png';
-
+      let buttonImg = buttonElement1.querySelector('.button-first__img');
+      buttonImg.src = './img/expand.png';
    }
 }
 
