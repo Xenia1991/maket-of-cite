@@ -8,16 +8,16 @@ body {
     height: 740px;
     position: absolute;
     top: -10px;
-    z-index: 3;
+    z-index: 4;
     background-color: white;
     font-family: "TTLakes";
     border: 1px solid transparent;
     @media (min-width: 768px) {
       width: 440px;
       height: 940px;
-      position: relative;
-      top: -1750px;
-      left: 325px;
+      position: fixed;
+      top: 0;
+      right: 0;
       box-shadow: -16px 0px 52px 0px rgba(14, 24, 80, 0.20);
     }
     @media (min-width: 1120px) {

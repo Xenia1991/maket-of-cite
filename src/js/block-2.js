@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
 
-let buttonElement1 = document.querySelector('.button-first');
+let buttonElement = document.querySelector('.button-first');
 let sliderElement = document.querySelector('.brand-list');
 const bodyElement = document.body;
 
@@ -12,20 +12,20 @@ let openBrandMenu = function () {
       sliderElement.classList.remove('brand-list--hidden');
       sliderElement.classList.add('brand-list--unhidden');
 
-      let buttonText = buttonElement1.querySelector('.button-first__text');
+      let buttonText = buttonElement.querySelector('.button-first__text');
       buttonText.textContent = 'Скрыть';
 
-      let buttonImg = buttonElement1.querySelector('.button-first__img');
+      let buttonImg = buttonElement.querySelector('.button-first__img');
       buttonImg.src = './img/up.png';
 
    } else if (sliderElement.classList.contains('brand-list--unhidden')) {
       sliderElement.classList.remove('brand-list--unhidden');
       sliderElement.classList.add('brand-list--hidden');
 
-      let buttonText = buttonElement1.querySelector('.button-first__text');
+      let buttonText = buttonElement.querySelector('.button-first__text');
       buttonText.textContent = 'Показать все';
 
-      let buttonImg = buttonElement1.querySelector('.button-first__img');
+      let buttonImg = buttonElement.querySelector('.button-first__img');
       buttonImg.src = './img/expand.png';
    }
 }
@@ -62,5 +62,5 @@ const toggleSwiper = () => {
   }
 };
 
-buttonElement1.addEventListener('click', openBrandMenu);
+buttonElement.addEventListener('click', openBrandMenu);
 window.addEventListener ('resize', toggleSwiper);

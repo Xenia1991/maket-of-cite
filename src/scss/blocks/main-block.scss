@@ -1,7 +1,27 @@
 body {
   margin: 0 auto;
+  position: relative;
 }
 
 .whole-page-container {
   margin: 0 auto;
+  position: relative;
+}
+
+.overlay {
+  display: none;
+  &--opened {
+    position: fixed;
+    display: block;
+    width: 320px;
+    height: 2000px;
+    background-color: rgba($color: #fff, $alpha: 0.95);
+    z-index: 3;
+    @media (min-width: 768px) {
+      width: 768px;
+    }
+    @media (min-width: 1120px) {
+      width: 1440px;
+    }
+  }
 }
