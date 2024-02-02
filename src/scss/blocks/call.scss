@@ -1,0 +1,108 @@
+body {
+  position: relative;
+}
+.call-container {
+  display: none;
+  &--hidden {
+    width: 320px;
+    height: 740px;
+    position: absolute;
+    top: -10px;
+    z-index: 4;
+    background-color: white;
+    font-family: "TTLakes";
+    border: 1px solid transparent;
+    @media (min-width: 768px) {
+      width: 440px;
+      height: 940px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      box-shadow: -16px 0px 52px 0px rgba(14, 24, 80, 0.20);
+    }
+    @media (min-width: 1120px) {
+      left: 1000px;
+    }
+  }
+}
+
+.call-close {
+  width: auto;
+  padding-top: 25px;
+  margin-left: 16px;
+  border: none;
+  background-color: transparent;
+  @media (min-width: 768px) {
+    position: absolute;
+    left: -80px;
+    top: 4px;
+  }
+}
+
+.call-headline {
+  position: relative;
+  @media (min-width: 768px) {
+    margin-top: 40px;
+  }
+  &__divider {
+    width: 4px;
+    height: 40px;
+    background-color: aqua;
+    position: absolute;
+    bottom: 2px;
+  }
+  &__text {
+    margin-left: 16px;
+    font-size: 24px;
+    color: #1B1C21;
+  }
+}
+
+.call-form__phone-input {
+  margin-left: 16px;
+  margin-bottom: 16px;
+  width: 280px;
+  height: 48px;
+  font-family: "TTLakes";
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  font-size: 16px;
+  @media (min-width: 768px) {
+    width: 400px;
+  }
+  &__message-input {
+    @media (min-width: 7678px) {
+      width: 400px;
+    }
+  }
+}
+
+.call-text {
+  margin-left: 16px;
+  font-size: 14px;
+  color: #7E7E82;
+  line-height: 0.9;
+  &--pink {
+    color: #FF3E79;
+  }
+}
+
+.call-button {
+  display: flex;
+  margin: 27px;
+  margin-left: 160px;
+  background-color: #FF3E79;
+  border: none;
+  border-radius: 14px;
+  justify-content: space-between;
+  @media (min-width: 768px) {
+    margin-left: 300px;
+  }
+  &__text {
+    text-transform: uppercase;
+    display: block;
+    align-self: center;
+    color: white;
+    font-weight: 500;
+  }
+}
