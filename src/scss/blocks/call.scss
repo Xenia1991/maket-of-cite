@@ -1,13 +1,11 @@
-body {
-  position: relative;
-}
 .call-container {
   display: none;
   &--hidden {
     width: 320px;
     height: 740px;
     position: absolute;
-    top: -10px;
+    top: 0;
+    right: 0;
     z-index: 4;
     background-color: white;
     font-family: "TTLakes";
@@ -15,13 +13,10 @@ body {
     @media (min-width: 768px) {
       width: 440px;
       height: 940px;
-      position: fixed;
+      position: absolute;
       top: 0;
       right: 0;
       box-shadow: -16px 0px 52px 0px rgba(14, 24, 80, 0.20);
-    }
-    @media (min-width: 1120px) {
-      left: 1000px;
     }
   }
 }
