@@ -156,6 +156,7 @@
     border: none;
     background-color: inherit;
     height: 42px;
+    cursor: pointer;
     @media (min-width: 768px) {
       display: flex;
       border: none;
@@ -267,6 +268,7 @@
 }
 
 .table-btn {
+  cursor: pointer;
   @media (min-width: 768px) {
     display: flex;
     width: 119px;

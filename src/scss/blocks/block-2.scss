@@ -133,6 +133,7 @@
 }
 
 .button-first {
+  cursor: pointer;
   @media (min-width: 768px) {
     border: none;
     display: flex;
