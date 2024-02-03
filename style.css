@@ -1059,7 +1059,6 @@ body {
   height: auto;
   background-color: #F8F8F8;
   font-family: "TTLakes";
-  border: 1px solid transparent;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .forth-section-container {
@@ -1187,12 +1186,10 @@ body {
   @media (min-width: 768px) {
     .extrainfo {
       width: 480px;
-      margin-bottom: 5px;
       position: relative; } }
   @media (min-width: 1120px) {
     .extrainfo {
       width: 480px;
-      margin-bottom: 5px;
       position: relative; } }
   .extrainfo-btn {
     display: flex;
