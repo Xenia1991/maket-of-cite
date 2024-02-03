@@ -3,7 +3,6 @@
   height: auto;
   background-color: #F8F8F8;
   font-family: "TTLakes";
-  border: 1px solid transparent;
   margin: 0 auto;
   @media (min-width: 768px) {
     width: 768px;
@@ -143,12 +142,10 @@
   position: relative;
   @media (min-width: 768px) {
     width: 480px;
-    margin-bottom: 5px;
     position: relative;
   }
   @media (min-width: 1120px) {
     width: 480px;
-    margin-bottom: 5px;
     position: relative;
   }
   &-btn {
