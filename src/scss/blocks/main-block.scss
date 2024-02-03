@@ -1,11 +1,9 @@
 body {
-  @media (min-width: 320px) {
-    width: 320px;
-    margin: 0 auto;
-    font-family: "TTLakes", "Arial", serif;
-    font-style: normal;
-    box-sizing: border-box;
-  }
+  width: 320px;
+  margin: 0 auto;
+  font-family: "TTLakes", "Arial", serif;
+  font-style: normal;
+  box-sizing: border-box;
   @media (min-width: 768px) {
     width: 768px;
   }
@@ -18,13 +16,11 @@ body {
 }
 
 .whole-page-container {
-  @media (min-width: 320px) {
-    width: 320px;
-    font-family: "TTLakes", "Arial", serif;
-    font-style: normal;
-    box-sizing: border-box;
-    position: relative;
-  }
+  width: 320px;
+  font-family: "TTLakes", "Arial", serif;
+  font-style: normal;
+  box-sizing: border-box;
+  position: relative;
   @media (min-width: 768px) {
     width: 768px;
   }
