@@ -1,25 +1,14 @@
-body {
-  margin: 0;
-  padding: o;
-  padding-bottom: 38px;
-  font-family: "TTLakes", "Arial", serif;
-  font-style: normal;
-  box-sizing: border-box;
-}
-
 .second-section-container {
   width: 320px;
   background-color: #F8F8F8;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
   @media (min-width: 768px) {
     width: 768px;
   }
   @media (min-width: 1120px) {
     width: 1120px;
-    position: relative;
-    top: -3px;
-    left: 320px;
   }
 }
 
@@ -144,6 +133,7 @@ body {
 }
 
 .button-first {
+  cursor: pointer;
   @media (min-width: 768px) {
     border: none;
     display: flex;
